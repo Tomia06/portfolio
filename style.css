@@ -1,88 +1,192 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
-  
   body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header style */
-  header {
-    background-color: #1a1a1a;
-    padding: 20px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('asset/bg_Hero.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
     color: white;
-  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* taille texte */
+.font{
+  font-size: 20px;
+}
+
+/* Header style */
+header {
+  background-color: #ffffff38;
+  padding: 30px 0;
+  color: white;
+  backdrop-filter: blur(10%);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-  }
-  .nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 20px;
+}
   
-  .nav-menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .nav-menu a:hover {
-    color: #00bcd4;
-  }
+.nav-menu a:hover {
+  color: #00bcd4;
+}
+
 
 /* Hero style */ 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('asset/bg_Hero.avif');
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-  }
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
   
   .hero-content {
     max-width: 800px;
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 70px;
     margin-bottom: 20px;
   }
   
   .hero p {
-    font-size: 1.2rem;
+    font-size: 25px;
     margin-bottom: 30px;
-    line-height: 1.6;}
-.about{
-    padding: 80px 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.6;
+  }
+  /* Hero style */ 
+
+/* section "Moi" */
+.moi{
+  padding: 80px 20px;
+  color: #000000;
 }
 
 
-    .moi-text {
-    flex: 1;
+.moi-text {
+  flex: 1;
 }
       
 .moi-text h2 {
-     font-size: 2rem;
-     margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
       
 .moi-text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: moi}
+  font-size: 1.1rem;  
+  margin-bottom: 20px;
+  line-height: moi
+} 
+
+/* section "Moi" */
+
+/* section "Mes projets */
+
+.projets {
+  padding: 80px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.projets h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projet_carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.carte {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.703);
+  
+}
+
+.carte img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+}
+
+.carte h3 {
+  font-size: 1.4rem;
+  margin: 15px;
+}
+
+.carte p {
+  font-size: 1rem;
+  padding: 0 15px 20px 15px;
+  color: #666;
+}
+
+/* section "Mes projets" */
+
+/* section "Ma deuxième passion */
+
+.passion {
+  padding: 80px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.passion h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.passion p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.iframe {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* section "Ma deuxième passion */

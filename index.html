@@ -11,10 +11,9 @@
         <div class="container">
           <nav class="nav-menu">
             <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">À propos</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#moi">Moi</a></li>
+              <li><a href="#projets"> Mes projets</a></li>
+              <li><a href="#passion">Autre</a></li>
             </ul>
           </nav>
         </div>
@@ -23,7 +22,7 @@
         <!-- section Hero -->
          <section class="hero">
             <div class="heroContent">
-            <h1>Miaro RATSIMBAZAFY</h1>
+            <h1 class="hero_h1">Miaro RATSIMBAZAFY</h1>
             <p>Développeur Front-End</p>
             </div>
          </section>
@@ -34,26 +33,44 @@
                 <h2>Qui suis-je ?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo quis distinctio doloremque exercitationem maiores laboriosam ipsa hic nam fuga accusantium esse voluptatem quasi vero voluptatibus, rerum cumque, facilis voluptates?</p>
                 <ul class="skills">
-                  <li>💻 HTML, CSS, JavaScript</li>
-                  <li>🎨 UI/UX Design</li>
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>UI/UX Design</li>
                 </ul>
               </div>
             </div>
             </div>
          </section>
          <!-- section "Mes projet" -->
-         <section>
+         <section class="projets" id="projets">
+          <div class="container">
             <h2>Mes projets</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <!-- Div des cartes -->
+            <div class="projet_carte">
+              <!-- div des carte de projet 1 --> 
+              <div class="carte">
+                <h3>Château St-Victor</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, reiciendis suscipit fuga maxime voluptate ipsam doloribus temporibus perspiciatis ex, asperiores autem quidem necessitatibus laudantium ducimus aperiam molestiae eaque, nisi error.</p>
+                <img src="asset/logoStVictor.png" alt="">
+              </div> 
+              <!-- div des carte de projet 2 -->  
+              <div class="carte">
+                <h3>Homeco</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reprehenderit necessitatibus laboriosam aspernatur sed nulla repudiandae non iusto inventore placeat minima error, dignissimos in molestiae ipsa suscipit distinctio labore beatae.</p>
+                <img src="asset/homco-logo.png" alt="">
+              </div>
+            </div> 
+          </div>
          </section>
          <!-- section "Musique" -->
-          <section>
-            <h2>Ma deuxième passion</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quos odit consequuntur omnis eius rem inventore porro blanditiis animi. Eveniet enim quasi atque laboriosam esse modi odit non, vero aperiam?
-            Labore fugit ullam error, ipsa obcaecati sint, delectus deserunt eos harum hic laborum, nesciunt quibusdam tenetur! Laborum vero quis molestias cupiditate quidem. Placeat quae neque ullam? Dolorum, fugiat dicta. Assumenda.</p>
-            <iframe src="" frameborder="0"></iframe>
+          <section class="passion" id="passion">
+            <div class="container">
+              <h2>Ma deuxième passion</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quos odit consequuntur omnis eius rem inventore porro blanditiis animi. Eveniet enim quasi atque laboriosam esse modi odit non, vero aperiam?
+              Labore fugit ullam error, ipsa obcaecati sint, delectus deserunt eos harum hic laborum, nesciunt quibusdam tenetur! Laborum vero quis molestias cupiditate quidem. Placeat quae neque ullam? Dolorum, fugiat dicta. Assumenda.</p>
+              <div class="iframe">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1025868109&color=%23122233&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+            </div>
           </section>
     </main>
 
