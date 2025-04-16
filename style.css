@@ -4,13 +4,13 @@
   box-sizing: border-box;
   }
   body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('asset/bg_Hero.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('asset/bg_body.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
-    color: white;
+    color: rgb(255, 249, 249);
 }
 .container {
   max-width: 1200px;
@@ -21,17 +21,16 @@
   gap: 40px;
 }
 
-/* taille texte */
-.font{
-  font-size: 20px;
-}
-
 /* Header style */
 header {
   background-color: #ffffff38;
   padding: 30px 0;
   color: white;
   backdrop-filter: blur(10%);
+}
+
+.nav-menu{
+  text-align: center;
 }
 
 .nav-menu ul {
@@ -49,18 +48,18 @@ header {
 }
   
 .nav-menu a:hover {
-  color: #00bcd4;
+  color: #FFD700;
 }
 
 
 /* Hero style */ 
 .hero {
-
+  margin-top: 50px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.829);
   text-align: center;
   padding: 0 20px;
 }
@@ -83,8 +82,10 @@ header {
 
 /* section "Moi" */
 .moi{
+  margin-top: 150px;
+  margin-bottom: 250px;
   padding: 80px 20px;
-  color: #000000;
+  color: #ffffff;
 }
 
 
@@ -93,29 +94,33 @@ header {
 }
       
 .moi-text h2 {
-  font-size: 2rem;
+  font-size: 45px;
   margin-bottom: 20px;
 }
       
 .moi-text p {
-  font-size: 1.1rem;  
+  font-size: 25px;  
   margin-bottom: 20px;
   line-height: moi
 } 
+
+.skills
 
 /* section "Moi" */
 
 /* section "Mes projets */
 
 .projets {
+  margin-top: 400px;
   padding: 80px 20px;
   color: #333;
   text-align: center;
 }
 
 .projets h2 {
-  font-size: 2.5rem;
+  font-size: 50px;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 .projet_carte {
@@ -126,17 +131,19 @@ header {
 }
 
 .carte {
-  background-color: #f9f9f9;
+  background-color: #fffcfc71;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(120, 120, 120, 0.073);
   max-width: 320px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(100%);
+
 }
 
 .carte:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.703);
+  box-shadow: 0 12px 25px rgba(255, 253, 253, 0.724);
   
 }
 
@@ -155,7 +162,7 @@ header {
 .carte p {
   font-size: 1rem;
   padding: 0 15px 20px 15px;
-  color: #666;
+  color: #fffbfb;
 }
 
 /* section "Mes projets" */
@@ -163,18 +170,19 @@ header {
 /* section "Ma deuxième passion */
 
 .passion {
+  margin-top: 150px;
   padding: 80px 20px;
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
 .passion h2 {
-  font-size: 2.5rem;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
 .passion p {
-  font-size: 1.2rem;
+  font-size: 23px;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -184,9 +192,29 @@ header {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
 }
-
 /* section "Ma deuxième passion */
+
+/* Footer */ 
+.footer{
+  background-color: #ffffff38;
+  padding: 30px 0;
+  color: white;
+  backdrop-filter: blur(10%);
+  text-align: center;
+}
+
+.footer a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.footer a:hover {
+  color: #FFD700;
+}
